@@ -1,0 +1,70 @@
+.loginForm{
+    display: block;
+    width: 400px;;
+    margin-left: auto;
+    margin-right: auto;
+}
+fieldset{
+    display: block;
+}
+
+.legend{
+    text-align:center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#userLabel, #passLabel{
+    display: block;
+    font-size: 18px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: #402964;
+}
+
+.username, .password{
+    width: 90%;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.loginButton{
+    text-align: center;
+}
+
+#loginButton{
+    border: none;
+    display:inline-block;
+    padding:0.7em 1.4em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.15em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    text-transform:uppercase;
+    font-weight:400;
+    color:#FFFFFF;
+    background-color:#402964;
+    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+    text-align:center;
+    position:relative;
+}
+#loginButton:active{
+    top:0.1em;
+}
+
+.register{
+   padding-left: 10px; 
+    
+}
+
+#regLink{
+    padding-left: 5px;
+    
+    color: #402964;
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+}

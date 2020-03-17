@@ -1,0 +1,57 @@
+.rating, .reviewTitle{
+ display: block; 
+    
+}
+
+.contentField{
+    margin-top: 20px;
+    width: 90%;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.reviewHead{
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+.reviewTitle{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 200px;
+    font-size: 16px;
+}
+
+.postReview{
+    border: none;
+    display:inline-block;
+    padding:0.7em 1.4em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.15em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    text-transform:uppercase;
+    font-weight:400;
+    color:#FFFFFF;
+    background-color:#402964;
+    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+    text-align:center;
+    position:relative;
+    font-size:18px;
+    
+}
+.postReview:active{
+    top:0.1em;
+}
+
+.postButton{
+    text-align: center;
+}
+
+

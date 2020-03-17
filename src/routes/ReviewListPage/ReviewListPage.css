@@ -1,0 +1,11 @@
+#gameTitle, #gameRating{
+    text-align: center;
+}
+
+#gameTitle{
+    font-size: 30px;
+}
+
+#gameRating{
+    font-size: 23px;
+}
