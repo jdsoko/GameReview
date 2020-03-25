@@ -22,7 +22,7 @@ fieldset{
     color: #402964;
 }
 
-.username, .password{
+#Login__user_name, #Login__password{
     width: 90%;
     margin-bottom: 20px;
     font-size: 16px;
@@ -67,4 +67,10 @@ fieldset{
 
 button:hover{
     cursor: pointer;
+}
+
+.red{
+    color: rgb(139, 2, 2);
+    font-weight: bold;
+    font-style: italic;
 }

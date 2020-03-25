@@ -31,3 +31,10 @@
 input{
     padding-left: 5px;
 }
+
+#Registration__user_name, #Registration__password,
+#Registration__full_name{
+    width: 90%;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
