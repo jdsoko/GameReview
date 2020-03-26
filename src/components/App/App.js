@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Header from '../Header/Header'
 import { Route, Switch, } from 'react-router-dom'
 import LoginPage from '../../routes/LoginPage/LoginPage';
 import RegistrationPage from '../../routes/RegistrationPage/RegistrationPage';
 import GameListPage from '../../routes/GameListPage/GameListPage';
 import ReviewListPage from '../../routes/ReviewListPage/ReviewListPage';
+import PrivateRoute from '../../routes/PrivateRoute/PrivateRoute';
 
 
 function App() {
@@ -24,14 +24,13 @@ function App() {
           path={'/registration'}
           component={RegistrationPage}
         />
-        <Route
+        <PrivateRoute
           path={'/games'}
-          render={(props) => <GameListPage {...props} />}
-          
-        />
-        <Route
+          component={GameListPage}
+          />
+        <PrivateRoute
           path={'/reviews'}
-          render={(props) => <ReviewListPage {...props} />}
+          component={ReviewListPage}
         />
 
       </Switch>

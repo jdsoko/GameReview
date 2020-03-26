@@ -18,3 +18,8 @@
     border-radius: 5px;
     text-align: left;
 }
+
+.review_username{
+    color: #402964;
+    font-weight: bold;
+}

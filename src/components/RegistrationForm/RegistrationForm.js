@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './RegistrationForm.css';
 import history from '../../history'
-import config from '../../config'
 import AuthApiService from '../../services/auth-api-service';
 
 export default class RegistrationForm extends Component{
@@ -83,7 +82,7 @@ export default class RegistrationForm extends Component{
                             name="password"
                             type="password" 
                             id="Registration__password" 
-                            placeholder="ex. Pass123" 
+                            placeholder="ex. Pass123!" 
                             required
                             onChange={e => this.setState({ password: e.target.value })}
                         />

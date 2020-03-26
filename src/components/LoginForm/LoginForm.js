@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './LoginForm.css';
-import { Link, Redirect } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import history from '../../history'
 import TokenService from '../../services/token-service'
-import config from '../../config'
 import AuthApiService from '../../services/auth-api-service';
 
 export default class LoginForm extends Component{
@@ -70,7 +69,7 @@ export default class LoginForm extends Component{
                     type="password" 
                     name='password' 
                     id="Login__password" 
-                    placeholder="ex. Pass123" 
+                    placeholder="ex. Pass123!" 
                     required
                     onChange={e => this.setState({ password: e.target.value})}
                 />

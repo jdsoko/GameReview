@@ -41,6 +41,7 @@ export default class ReviewListPage extends Component {
                 reviewTitle={review.review_title}
                 rating={review.rating}
                 content={review.content}
+                username={review.user_name}
            />
        )
    }

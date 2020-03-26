@@ -5,7 +5,9 @@ export default class ReviewItem extends Component {
     render() {
         return (
         <div className="review">
-            <h3>{this.props.reviewTitle}</h3> <p>Rating: {this.props.rating}/5</p>
+            <p>Rating: {this.props.rating}/5</p>
+            <h4>{this.props.reviewTitle}</h4>
+            <p className="review_username">{this.props.username}</p>
             <fieldset className="reviewContent">
                  {this.props.content}
             </fieldset>
