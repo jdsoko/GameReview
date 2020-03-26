@@ -13,7 +13,7 @@ export default class AddGame extends Component {
     handleSubmit = e => {
         e.preventDefault()
         const reqBody = {title: this.state.title}
-        fetch(`${config.API_ENDPOINT}/games`, {
+        fetch(`${config.API_BASE_URL}/games`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

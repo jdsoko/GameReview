@@ -47,7 +47,7 @@ export default class GameListPage extends Component {
     }
 
     fetchGames(){
-        fetch(`${config.API_ENDPOINT}/games`, {
+        fetch(`${config.API_BASE_URL}/games`, {
             headers: {
              'authorization': `bearer ${TokenService.getAuthToken()}`
             }
@@ -81,7 +81,7 @@ export default class GameListPage extends Component {
                     placeholder="i.e. Grand Theft Auto" 
                     onChange={this.filterGames}
                 />
-                <button>Search</button>
+                
                 {/*
                 <label htmlFor ="gameSearch">
                     Search For Games by Title: 

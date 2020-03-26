@@ -17,7 +17,7 @@ export default class ReviewListPage extends Component {
     }
 
     fetchReviews(){
-        fetch(`${config.API_ENDPOINT}/games/${this.props.location.state.id}/reviews`,{
+        fetch(`${config.API_BASE_URL}/games/${this.props.location.state.id}/reviews`,{
          headers:  { 
             'authorization': `bearer ${TokenService.getAuthToken()}`
         }

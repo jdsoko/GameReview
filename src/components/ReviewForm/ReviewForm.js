@@ -22,7 +22,7 @@ export default class ReviewForm extends Component {
             game_id: this.props.game_id
         }
         
-        fetch(`${config.API_ENDPOINT}/reviews`, {
+        fetch(`${config.API_BASE_URL}/reviews`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
