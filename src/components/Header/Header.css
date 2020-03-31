@@ -3,15 +3,38 @@ header{
     margin-top: 50px;
     color: #402964;
     margin-bottom: 20px;
+    
   }
 
   .header2{
     font-size: 30pt;
-    
+    font-family: 'Orbitron';
+    text-shadow: 2px 2px 5px gray;
+    -webkit-text-shadow: 2px 2px 5px gray;
+    -moz-text-shadow: 2px 2px 5px gray;
+    letter-spacing: 2px; 
     }
     
     .header1{
       font-weight: bold;
       font-size: 36pt;
+      font-family: 'Audiowide';
+      text-shadow: 2px 2px 5px gray;
+    -webkit-text-shadow: 2px 2px 5px gray;
+    -moz-text-shadow: 2px 2px 5px gray;
+      letter-spacing: 2px;
+    }
+
+    .header-link{
+        text-decoration: none;
+    }
+
+    @media only screen and (max-width: 600px){
+      .header1{
+        font-size: 28pt;
+      }
+      .header2{
+        font-size: 22pt;
+      }
     }
     

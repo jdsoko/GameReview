@@ -5,8 +5,9 @@ import Header from '../../components/Header/Header'
 import AddGame from '../../components/AddGame/AddGame'
 import config from '../../config'
 import TokenService from '../../services/token-service'
-import { Redirect } from 'react-router-dom'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/fontawesome-free-solid'
+ 
 export default class GameListPage extends Component {
     state = {
         error: null,
@@ -75,25 +76,15 @@ export default class GameListPage extends Component {
                 
                 <Header />
                 
-                <label forHtml="gameSearch">Search for Games by Title: </label>
-                <input 
-                    type="search" 
-                    className="gameSearch" 
-                    placeholder="i.e. Grand Theft Auto" 
-                    onChange={this.filterGames}
-                />
-                
-                {/*
-                <label htmlFor ="gameSearch">
-                    Search For Games by Title: 
-                </label>
-                <input 
-                type="search" 
-                placeholder="i.e. Grand Theft Auto"
-                className="gameSearch"
-                />
-                */}
-                
+                <div className="searchCont">
+                    <FontAwesomeIcon className="searchIcon" icon={faSearch} />
+                    <input 
+                        type="text" 
+                        className="gameSearch" 
+                        placeholder="i.e. Grand Theft Auto"
+                        onChange={this.filterGames}
+                    />
+                </div>
                 {this.renderGames(this.state.filtered)}
                 <AddGame />
             </div>

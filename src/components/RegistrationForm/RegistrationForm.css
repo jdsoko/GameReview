@@ -1,8 +1,13 @@
 .registerHeader{
    color: #402964; 
    font-weight: bold;
-   font-size: 24px;
+   font-size: 22px;
    text-align: center;
+   letter-spacing: 2px;
+   font-family: 'Orbitron';
+   text-shadow: 2px 2px 5px gray;
+   -webkit-text-shadow: 2px 2px 5px gray;
+   -moz-text-shadow: 2px 2px 5px gray;
 }
 
 .fullName{
@@ -26,10 +31,17 @@
     padding-bottom: 5px;
     font-weight: bold;
     color: #402964; 
+    
+    
 }
 
 input{
     padding-left: 5px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    
 }
 
 #Registration__user_name, #Registration__password,
@@ -37,4 +49,17 @@ input{
     width: 90%;
     margin-bottom: 20px;
     font-size: 16px;
+    box-shadow: 2px 2px 5px gray;
+    -webkit-box-shadow:2px 2px 5px gray;
+    -moz-box-shadow:2px 2px 5px gray
+}
+
+
+@media only screen and (max-width: 405px) {
+    .regForm{
+        width: 98%;
+    }
+    .registerHeader{
+        font-size: 18px;
+    }
 }

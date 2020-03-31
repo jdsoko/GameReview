@@ -53,7 +53,7 @@ export default class ReviewForm extends Component {
             onSubmit={this.handleSubmit}>
             <fieldset className="reviewField">
                 <div className="reviewHead">
-                <h4>Write a Review</h4>
+                <h4 className="writeReview">Write a Review</h4>
                 <div role='alert' id='gamePageError'>
                 {error && <p className='red'>{error}</p>}
                 </div>

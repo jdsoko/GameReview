@@ -3,9 +3,36 @@
 }
 
 #gameTitle{
-    font-size: 30px;
+    margin-top: 50px;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    color: #402964;
+    text-shadow: 1px 1px 5px gray;
+    -webkit-text-shadow:1px 1px 5px gray;
+    -moz-text-shadow:1px 1px 5px gray;
+    text-decoration: underline;
 }
 
 #gameRating{
     font-size: 23px;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+.userRating{
+    color: #242424;
+    text-shadow: 1px 1px 5px gray;
+    -webkit-text-shadow:1px 1px 5px gray;
+    -moz-text-shadow:1px 1px 5px gray;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .userRating{
+        font-size:18px;
+    }
+    #gameTitle{
+        font-size: 28px;
+    }
 }

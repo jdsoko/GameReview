@@ -5,6 +5,7 @@ import Header from '../../components/Header/Header'
 import ReviewForm from '../../components/ReviewForm/ReviewForm'
 import config from '../../config'
 import TokenService from '../../services/token-service'
+import {GameStarRating} from '../../components/GameStarRating/GameStarRating'
 
 export default class ReviewListPage extends Component {
     state = {
@@ -37,12 +38,14 @@ export default class ReviewListPage extends Component {
     renderReviews(reviews){
        
        return reviews.map(review => 
+           
            <ReviewItem
                 reviewTitle={review.review_title}
                 rating={review.rating}
                 content={review.content}
                 username={review.user_name}
            />
+           
        )
    }
    
@@ -51,7 +54,9 @@ export default class ReviewListPage extends Component {
             <div>
                 <Header />
                 <h3 id="gameTitle">{this.props.location.state.title}</h3>
-                <h4 id="gameRating">Average Rating: {this.props.location.state.avgRating}/5</h4>
+                <div id="gameRating">
+               <span className="userRating">User Rating: </span> <GameStarRating  rating={this.props.location.state.avgRating} />
+                </div>
                 <ReviewForm game_id = {this.props.location.state.id}/>
                 {this.renderReviews(this.state.reviews)}
             </div>

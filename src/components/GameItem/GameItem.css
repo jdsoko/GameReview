@@ -7,14 +7,19 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(133, 133, 133, 0.63);
+    background-color:  rgba(211, 208, 233, 0.712);
+    /*rgba(201, 192, 255, 0.76)*/
+    box-shadow: 2px 2px 5px gray;
+    -webkit-box-shadow:2px 2px 5px gray;
+    -moz-box-shadow:2px 2px 5px gray;
   }
 
   .reviewButton{
     border: none;
     display:inline-block;
     padding:0.7em 1.4em;
-    margin:0 0.3em 0.3em 0;
+    margin-top: 25px;
+    margin-bottom: 15px;
     border-radius:0.15em;
     box-sizing: border-box;
     text-decoration:none;
@@ -29,4 +34,42 @@
 }
 .reviewButton:active{
     top:0.1em;
+}
+
+.gameTitle{
+  font-family: 'Audiowide';
+  color: #402964;
+  letter-spacing: 1px;
+  font-size: 26px;
+  text-shadow: 1px 1px 5px gray;
+  -webkit-text-shadow: 1px 1px 5px gray;
+  -moz-text-shadow: 1px 1px 5px gray;
+  padding-left: 3px;
+  padding-right: 3px;
+  
+}
+
+@media only screen and (min-width: 1000px){
+  .game{
+    width: 931px;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .game{
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .reviewButton{
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+  .gameTitle{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
