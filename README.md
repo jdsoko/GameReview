@@ -1,5 +1,5 @@
 # **GameReview**
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+*This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).*
 
 #### Live App: https://gamereview.now.sh/
 #### Server Repo: https://github.com/jdsoko/gamereview_api
