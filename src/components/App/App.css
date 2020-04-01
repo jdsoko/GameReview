@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
 
-body {
+html {
     background-color: rgb(255, 255, 255);
     
-    background: url('../../download.jpg') no-repeat center center;
+    background: url('../../download.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
+}
+
+@media only screen and (max-width: 600px){
+    html{
+        background-size: 900px 950px;
+    }
 }
