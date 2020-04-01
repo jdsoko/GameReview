@@ -34,9 +34,9 @@ Builds the app for production to the build folder.
 ![Screen shot of review page](https://i.ibb.co/dKGL6jq/unnamed-2.png)
 
 
-##Technologies Used:
+## Technologies Used:
 
-### REACT/JSX/CSS/Media Queries/Node/Express Server/SQL Database/JWT Auth
+#### REACT/JSX/CSS/Media Queries/Node/Express Server/SQL Database/JWT Auth
 
 
 
