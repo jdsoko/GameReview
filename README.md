@@ -4,6 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Live App: https://gamereview.now.sh/
 #### Server Repo: https://github.com/jdsoko/gamereview_api
 
+## Summary:
+
+#### An app that enables users with a registered account to search through a list of games, and then select a specific game in order to read reviews of the game posted by other users. Registered users can also add missing games to the list and post their own written reviews with an accompanying star rating.
+
 ### Available Scripts
 
 #### `npm start`
@@ -18,9 +22,7 @@ Launches the test runner in the interactive watch mode.<br />
 #### `npm run build`
 Builds the app for production to the build folder.
 
-## Summary:
 
-#### An app that enables users with a registered account to search through a list of games, and then select a specific game in order to read reviews of the game posted by other users. Registered users can also add missing games to the list and post their own written reviews with an accompanying star rating.
 
 ## Screenshots:
 
