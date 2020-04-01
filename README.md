@@ -39,7 +39,7 @@ Builds the app for production to the build folder.
 
 ## Technologies Used:
 
-### REACT/JSX/CSS/Media Queries/Node/Express Server/SQL Database/JWT Auth
+### REACT/JSX/CSS/Node/Express Server/SQL Database/JWT Auth
 
 
 
