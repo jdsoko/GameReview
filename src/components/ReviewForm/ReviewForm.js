@@ -36,6 +36,7 @@ export default class ReviewForm extends Component {
             : res.json()
             
         )
+        .then(resJson(console.log(resJson)))
         .then(e => 
             setTimeout(() => history.push('/games'), 200)
         )
